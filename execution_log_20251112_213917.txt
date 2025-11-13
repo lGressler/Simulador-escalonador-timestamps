@@ -1,0 +1,20 @@
+─────────────────────────────────────────────────────────────────────────────────────── Início da Simulação ────────────────────────────────────────────────────────────────────────────────────────
+Nova transação criada: T1(TS=1762994358, active)
+Tentando executar r1(x)
+Executada r1(x) → RTS(x)=1762994358
+Nova transação criada: T2(TS=1762994359, active)
+Tentando executar w2(x)
+Executada w2(x) → WTS(x)=1762994359
+Tentando executar r2(y)
+Executada r2(y) → RTS(y)=1762994359
+Tentando executar w1(y)
+w1(y) rejeitada → T1 abortada (RTS > TS)
+Removendo operações anteriores de T1 da HF...
+T1 reiniciando com novo timestamp...
+Transação T1 commitada
+Transação T2 commitada
+─────────────────────────────────────────────────────────────────────────────────────── História Final (HF) ────────────────────────────────────────────────────────────────────────────────────────
+w2(x)
+r2(y)
+c1
+c2
