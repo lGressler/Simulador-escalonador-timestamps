@@ -39,6 +39,14 @@ Se uma operação violar as regras do protocolo, a transação é abortada e rei
 | `DataItem`       | Controla RTS e WTS de cada dado. |
 | `Scheduler`      | Gerencia HI, HF, execuções, abortos e logs. |
 
+project/
+├── main.py # Ponto de entrada
+├── scheduler.py # Escalonador e controle de timestamps
+├── transaction.py # Classe Transaction
+├── data_item.py # Estrutura de dados manipulados
+├── logger.py # Sistema de logs (console + arquivo)
+├── init.py
+
 ---
 
 ## Características
