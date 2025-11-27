@@ -108,5 +108,17 @@ O arquivo txt contém o log completo de cada simulação.
 
 ---
 
+## Relatorio do que acontece no código:
+
+O código é uma simulação de como um banco de dados real que usa o protocolo Timestamp trataria leituras, escritas, conflitos, aborts e reinícios de transações.
+
+O que cada arquivo faz:
+
+* main.py: interface; lê HI (História inicial) e inicia o Scheduler.
+* scheduler.py: implementa o protocolo — decide execução, aborta, reinicia, monta HF e salva log.
+* transaction.py: representa transação (id, timestamp, status, ops). --> Serve para o scheduler saber quem é cada transação, sua idade e o que ela já fez.
+* data_item.py: representa um dado do BD simulado (RTS, WTS). --> Serve para o scheduler decidir se uma leitura ou escrita pode ou não acontecer.
+* utils.py: parsing da Historia inicial.
+
 ## Conclusão
 O sistema implementa corretamente o protocolo de *timestamps*, simulando o comportamento do escalonamento de transações em ambientes concorrentes e garantindo consistência dos dados.
