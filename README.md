@@ -18,6 +18,12 @@
 
 Historia teste: 
 
+r1(x) w1(x) c1 r2(x) w2(x) c2 (simples)
+r1(x) w2(x) w1(x) c2 c1 (Abort de transação antiga por conflito com escrita posterior)
+w1(x) r2(x) c1 c2 (Abort da transação jovem por leitura suja / leitura após escrita futura)
+r1(x) r2(x) w3(x) w1(x) w2(x) c3 c1 c2 (Multi-abort e reexecução / caso mais complexo)
+HI curta pra ver reexecução visível rapidamente: r1(x) w2(x) w1(x) c2 c1
+
 ---
 
 ## Objetivo
