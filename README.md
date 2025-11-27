@@ -9,9 +9,14 @@
 
 ## Como rodar
 
-1. Ativar o amb. virtual do python: .venv\Scripts\Activate.ps1
-2. Rode o simulador: python src/main.py
-3. Resultado sairá em um arquivo txt
+1. python -m venv .venv
+2. Ativar o amb. virtual do python: .venv\Scripts\Activate.ps1
+3. python.exe -m pip install --upgrade pip
+4. pip install rich
+5. Rode o simulador: python src/main.py
+6. Resultado sairá em um arquivo txt
+
+Historia teste: 
 
 ---
 

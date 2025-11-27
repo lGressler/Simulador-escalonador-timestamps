@@ -1,0 +1,20 @@
+───────────────────────────────────────────────────────────────────────────────────────────────────── Início da Simulação ──────────────────────────────────────────────────────────────────────────────────────────────────────
+Nova transação criada: T1(TS=1, active)
+Tentando executar r1(x)
+Executada r1(x) → RTS(x)=1
+Tentando executar w1(x)
+Executada w1(x) → WTS(x)=1
+Transação T1 commitada
+Nova transação criada: T2(TS=2, active)
+Tentando executar r2(x)
+Executada r2(x) → RTS(x)=2
+Tentando executar w2(x)
+Executada w2(x) → WTS(x)=2
+Transação T2 commitada
+───────────────────────────────────────────────────────────────────────────────────────────────────── História Final (HF) ──────────────────────────────────────────────────────────────────────────────────────────────────────
+r1(x)
+w1(x)
+c1
+r2(x)
+w2(x)
+c2
